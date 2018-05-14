@@ -23,13 +23,7 @@ public class Pawn extends Figure{
 		hasMoved = true;
 	}
 	
-	//Set the possible fields for Pawn.
-	public void computePossibleFields()
-	{
-		List<Field> posFields = new LinkedList<Field>();
-		//Tmp Variables fields I have to check
-		//use super.setPossibleFields
-	}
+	
 	
 	
 	

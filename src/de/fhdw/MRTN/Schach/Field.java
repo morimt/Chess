@@ -29,4 +29,9 @@ public class Field {
 	 {
 		 return y;
 	 }
+	 
+	 public boolean equals(Field f)
+	 {
+		 return (this.getX() == f.getX() && this.getY() == f.getY());
+	 }
 }

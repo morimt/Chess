@@ -36,6 +36,16 @@ public class Figure {
 	public void setPossibleFields(List<Field> possibleFields) {
 		this.possibleFields = possibleFields;
 	}
+	
+	public String getSide()
+	{
+		return this.name.substring(this.name.indexOf('-')+1).toLowerCase();
+	}
+	
+	public String getFig()
+	{
+		return this.name.substring(0, this.name.indexOf('0')).toLowerCase();
+	}
 
 	public boolean move(Field f)
 	{
@@ -43,10 +53,14 @@ public class Figure {
 		return false;
 	}
 	
+	
 	public boolean move(char x, char y)
 	{
 		return this.move(new Field(x, y));
 	}
+	
+	
+	
 
 
 
