@@ -15,39 +15,6 @@ public class Board {
 	
 	private void initFigures()
 	{
-		/*Pawn p1 = new Pawn(new Field('0','1'), "Pawn", "White");
-		figures.add(p1);
-		Pawn p2 = new Pawn(new Field('1','1'), "Pawn", "White");
-		figures.add(p2);
-		Pawn p3 = new Pawn(new Field('2','1'), "Pawn", "White");
-		figures.add(p3);
-		Pawn p4 = new Pawn(new Field('3','1'), "Pawn", "White");
-		figures.add(p4);
-		Pawn p5 = new Pawn(new Field('4','1'), "Pawn", "White");
-		figures.add(p5);
-		Pawn p6 = new Pawn(new Field('5','1'), "Pawn", "White");
-		figures.add(p6);
-		Pawn p7 = new Pawn(new Field('6','1'), "Pawn", "White");
-		figures.add(p7);
-		Pawn p8 = new Pawn(new Field('7','1'), "Pawn", "White");
-		figures.add(p8);
-		Pawn p9 = new Pawn(new Field('0','6'), "Pawn", "Black");
-		figures.add(p9);
-		Pawn p10 = new Pawn(new Field('1','6'), "Pawn", "Black");
-		figures.add(p10);
-		Pawn p11 = new Pawn(new Field('2','6'), "Pawn", "Black");
-		figures.add(p11);
-		Pawn p12 = new Pawn(new Field('3','6'), "Pawn", "Black");
-		figures.add(p12);
-		Pawn p13 = new Pawn(new Field('4','6'), "Pawn", "Black");
-		figures.add(p13);
-		Pawn p14 = new Pawn(new Field('5','6'), "Pawn", "Black");
-		figures.add(p14);
-		Pawn p15 = new Pawn(new Field('6','6'), "Pawn", "Black");
-		figures.add(p15);
-		Pawn p16 = new Pawn(new Field('7','6'), "Pawn", "Black");
-		figures.add(p16);*/
-		
 		for(int i = 1; i < 7; i+=5)
 		{
 			for(int j = 0; j < 8; j++)

@@ -54,21 +54,15 @@ public class Figure {
 		return this.name.substring(0, this.name.indexOf('-')).toLowerCase();
 	}
 
-	public boolean move(Field f)
+	public void move(Field f)
 	{
 		//TODO
-		return false;
 	}
 	
-	
-	public boolean move(char x, char y)
+	public void move(char x, char y)
 	{
-		return this.move(new Field(x, y));
+		this.move(new Field(x, y));
 	}
 	
 	
-	
-
-
-
 }
