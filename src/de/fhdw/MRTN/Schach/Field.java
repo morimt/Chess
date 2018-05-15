@@ -2,30 +2,36 @@ package de.fhdw.MRTN.Schach;
 
 public class Field {
 	
-	 private char x, y;
+	 private int x, y;
 	 
-	 public Field(char x, char y)
+	 public Field(int x, int y)
 	 {
 		 this.setX(x);
 		 this.setY(y);
 	 }
+	 
+	 public Field(Field f)
+	 {
+		 this.setX(f.getX());
+		 this.setY(f.getY());
+	 }
 
-	 public void setX(char x)
+	 public void setX(int x)
 	 {
 		 this.x = x;
 	 }
 	 
-	 public void setY(char y)
+	 public void setY(int y)
 	 {
 		 this.y = y;
 	 }
 	 
-	 public char getX()
+	 public int getX()
 	 {
 		 return x;
 	 }
 	 
-	 public char getY()
+	 public int getY()
 	 {
 		 return y;
 	 }
@@ -39,7 +45,7 @@ public class Field {
 	 
 	 public void printField()
 	 {
-		 System.out.println("(" + (int)x + ", " + (int)y + ")");
+		 System.out.println("(" + (char)(65+x) + ", " + y + ")");
 	 }
 	 
 	 

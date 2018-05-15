@@ -51,18 +51,9 @@ public class Figure {
 	
 	public String getFig()
 	{
-		return this.name.substring(0, this.name.indexOf('-')).toLowerCase();
+		return name.toLowerCase();
 	}
 
-	public void move(Field f)
-	{
-		//TODO
-	}
-	
-	public void move(char x, char y)
-	{
-		this.move(new Field(x, y));
-	}
 	
 	
 }
