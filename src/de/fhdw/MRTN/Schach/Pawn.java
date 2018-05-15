@@ -7,9 +7,9 @@ public class Pawn extends Figure{
 
 	private boolean hasMoved;
 	
-	public Pawn(Field nf, String n, Board b)
+	public Pawn(Field nf, String name, String side)
 	{
-		super(nf, n, b);
+		super(nf, name, side);
 		this.hasMoved = false;
 	}
 	

@@ -34,4 +34,13 @@ public class Field {
 	 {
 		 return (this.getX() == f.getX() && this.getY() == f.getY());
 	 }
+	 
+	 
+	 
+	 public void printField()
+	 {
+		 System.out.println("(" + (int)x + ", " + (int)y + ")");
+	 }
+	 
+	 
 }

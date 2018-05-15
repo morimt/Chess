@@ -5,12 +5,14 @@ import java.util.List;
 public class Figure {
 	
 	private Field field;
-	private String name;	//e.g. "Pawn-Black"
+	private String name;
+	private String side;
 	private List<Field> possibleFields;
 	
-	public Figure(Field nf, String n, Board b) {
+	public Figure(Field nf, String name, String side) {
 		this.setField(nf);
-		this.setName(n);
+		this.setName(name);
+		this.setSide(side);
 	}
 
 	public Field getField() {
@@ -39,12 +41,17 @@ public class Figure {
 	
 	public String getSide()
 	{
-		return this.name.substring(this.name.indexOf('-')+1).toLowerCase();
+		return this.side;
+	}
+	
+	private void setSide(String side)
+	{
+		this.side = side;
 	}
 	
 	public String getFig()
 	{
-		return this.name.substring(0, this.name.indexOf('0')).toLowerCase();
+		return this.name.substring(0, this.name.indexOf('-')).toLowerCase();
 	}
 
 	public boolean move(Field f)
